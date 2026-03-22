@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Benítez | Frontend Developer</title>
+  <meta name="description"
+    content="Portfolio personal de Jose Benítez. Frontend Developer Junior con foco en HTML, CSS y JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- FONDO ANIMADO -->
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">JB<span>.</span></div>
+      <nav id="main-nav">
+        <a href="#about">Enfoque</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" data-section>
+      <div class="container hero-container">
+        <p class="hero-mini">Hola, soy</p>
+
+        <h1 class="hero-name">
+          <span>Jose Manuel</span>
+          <span>Benítez Alba</span>
+        </h1>
+
+        <h2 class="hero-role">
+          Frontend Developer Junior.
+        </h2>
+
+        <p class="hero-description">
+          HTML, CSS y <strong>JavaScript</strong>. Busco una primera oportunidad
+          donde aportar y seguir creciendo dentro de un equipo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn-secondary">Contactar</a>
+         
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll hacia abajo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <polyline points="19 12 12 19 5 12" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ENFOQUE -->
+    <section id="about" class="section" data-section>
+      <div class="container narrow">
+        <h2>Mi enfoque</h2>
+        <div class="about-block">
+          <p class="about-highlight">
+            Me importa escribir código limpio y entendible.
+          </p>
+          <p>
+            Antes de añadir algo, entiendo por qué va ahí.
+            No avanzo sobre algo que no he comprendido.
+          </p>
+          <p>
+            Trabajo con atención al detalle y con ganas de hacerlo
+            bien desde el primer día.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-section>
+      <div class="container narrow">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML</span>
+            <span class="skill-level">Estructura semántica, accesibilidad básica</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">CSS</span>
+            <span class="skill-level">Responsive, Flexbox, Grid, animaciones</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-level">DOM, eventos, funciones, objetos, módulos</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon">🐙</span>
+            <span class="skill-name">Git</span>
+            <span class="skill-level">Control de versiones básico, GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section" data-section>
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+
+          <article class="project-card featured">
+            <h3>Cervecería Landing</h3>
+            <p>
+              Landing page responsive con diseño limpio
+              y adaptación a dispositivos móviles.
+            </p>
+            <span class="tech">HTML · CSS · Responsive Design</span>
+            <a href="https://josebenitezalba.github.io/cerveceria/" target="_blank" class="project-link">
+              Ver proyecto →
+            </a>
+          </article>
+
+          <article class="project-card">
+
+            <h3>Calculadora JS</h3>
+            <p>
+              Calculadora interactiva con soporte de teclado,
+              modo claro/oscuro y sonidos sintéticos por tipo de acción.
+              Sin dependencias externas.
+            </p>
+            <span class="tech">JavaScript · Web Audio API · CSS Variables</span>
+            <a href="https://josebenitezalba.github.io/Calculadora/" target="_blank" class="project-link">
+              Ver proyecto →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>PoolBook</h3>
+            <p>
+              Aplicación web para gestionar reservas de carriles en una piscina.
+              Calendario interactivo, autenticación de usuarios y panel de administración.
+            </p>
+            <span class="tech">Laravel · MySQL · FullCalendar · Tailwind CSS</span>
+            <a href="https://poolbook-production.up.railway.app" target="_blank" class="project-link">
+              Ver proyecto →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section contact-section" data-section>
+      <div class="container narrow contact-container">
+        <div class="contact-text">
+          <h2>Hablemos</h2>
+          <p>Estoy disponible y abierto a hablar.</p>
+          <p>
+            Si buscas un junior con ganas de trabajar bien
+            desde el primer día, puedes escribirme.
+          </p>
+        </div>
+        <div class="contact-cta">
+          <a href="mailto:jombenalb@gmail.com" class="btn-primary">
+            Escribeme
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Jose Manuel Benítez Alba</p>
+      <div class="footer-icons">
+      
+        
+        <a href="https://github.com/JoseBenitezAlba" target="_blank" class="footer-icon" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
