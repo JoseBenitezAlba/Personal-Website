@@ -125,7 +125,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   padding-top: 80px;
-  /* El hero siempre visible, sin esperar al scroll */
   opacity: 1 !important;
   transform: none !important;
 }
@@ -138,7 +137,6 @@ nav a:hover {
   font-size: 0.9rem;
   color: #4f8cff;
   margin-bottom: 15px;
-  /* Animación de entrada propia */
   animation: fadeUp 0.7s ease both;
   animation-delay: 0.1s;
 }
@@ -250,12 +248,12 @@ nav a.active {
 }
 
 /* =============================
-   SKILLS
+   TECNOLOGÍAS
 ============================= */
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -340,6 +338,11 @@ nav a.active {
    PROJECTS
 ============================= */
 
+.projects-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -380,10 +383,6 @@ nav a.active {
 
 .project-link:hover {
   color: #4f8cff;
-}
-
-.featured {
-  border: 1px solid #4f8cff;
 }
 
 /* =============================
@@ -451,7 +450,6 @@ footer {
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-/* El hero sobreescribe los estilos de arriba */
 .hero[data-section] {
   opacity: 1;
   transform: none;
@@ -487,7 +485,6 @@ footer {
   transition: 0.3s ease;
 }
 
-/* Cruz cuando está abierto */
 .hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -548,5 +545,13 @@ footer {
   .contact-container {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .projects-grid {
+    max-width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
