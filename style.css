@@ -398,6 +398,9 @@ nav a.active {
 
 .contact-cta {
   flex-shrink: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* =============================
@@ -539,6 +542,11 @@ footer {
   .contact-container {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contact-cta {
+    flex-direction: column;
+    width: 100%;
   }
 
   .skills-grid,
