@@ -46,8 +46,13 @@ body {
   z-index: 1;
 }
 
+/* Antes dependía del orden en el archivo para ganar la cascada
+   sobre .container (misma especificidad). Con su propio width/margin
+   funciona sola, sin depender de dónde se declare. */
 .narrow {
+  width: 90%;
   max-width: 750px;
+  margin: 0 auto;
 }
 
 .section {
@@ -129,8 +134,10 @@ nav a:hover {
   transform: none !important;
 }
 
+/* 750px en vez de 800px: ahora coincide exactamente con .narrow,
+   así que el hero queda alineado con About/Skills/Projects/Contact. */
 .hero-container {
-  max-width: 800px;
+  max-width: 750px;
 }
 
 .hero-mini {
@@ -324,6 +331,21 @@ nav a.active {
   background: rgba(79,140,255,0.1);
 }
 
+/* Estado de foco visible para navegación por teclado.
+   Antes solo había :hover, así que un usuario tabulando no veía
+   dónde estaba el foco. */
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.btn-cv:focus-visible,
+nav a:focus-visible,
+.project-link:focus-visible,
+.footer-icon:focus-visible,
+.scroll-indicator:focus-visible {
+  outline: 2px solid #4f8cff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* =============================
    ABOUT
 ============================= */
@@ -338,9 +360,12 @@ nav a.active {
    PROJECTS
 ============================= */
 
+/* auto-fit en vez de repeat(2, 1fr): con 2 proyectos se ve igual
+   que antes, pero si añades un tercero (p. ej. PoolBook) no te
+   deja una fila descuadrada 2+1. */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -552,5 +577,20 @@ footer {
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* =============================
+   ACCESIBILIDAD: MOVIMIENTO REDUCIDO
+============================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
