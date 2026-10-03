@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 document.addEventListener('DOMContentLoaded', () => {
 
 /* =============================
@@ -10,12 +11,14 @@ if (hamburger && mainNav) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     mainNav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(mainNav.classList.contains('open')));
   });
 
   mainNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
       mainNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
     });
   });
 }
@@ -65,7 +68,9 @@ updateActiveNav();
    CANVAS BACKGROUND PARTICLES
 ============================= */
 const canvas = document.getElementById('bg-canvas');
+if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 const ctx = canvas.getContext('2d');
+if (!ctx) return;
 
 let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
