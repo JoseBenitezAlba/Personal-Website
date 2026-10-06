@@ -87,6 +87,94 @@
       <div class="container narrow">
         <h2>Experiencia</h2>
         <div class="projects-grid">
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Manuel | Desarrollador PHP y Laravel junior</title>
+  <meta name="description"
+    content="José Manuel, desarrollador web junior con foco en PHP y Laravel. Descubre PoolBook, una aplicación de reservas con roles, bonos y asistente de IA.">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="José Manuel | PHP y Laravel junior" />
+  <meta property="og:description" content="Código que puedes ver y proyectos que puedes probar. Descubre PoolBook y mi trabajo como desarrollador web junior." />
+  <meta property="og:url" content="https://josebenitezalba.github.io/Personal-Website/" />
+  <meta property="og:image" content="https://josebenitezalba.github.io/Personal-Website/assets/social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://josebenitezalba.github.io/Personal-Website/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- FONDO ANIMADO -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">José<span>.</span></div>
+      <nav id="main-nav">
+        <a href="#experience">Experiencia</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" data-section>
+      <div class="container hero-container">
+        <p class="hero-mini">Hola, soy</p>
+
+        <h1 class="hero-name">
+          <span>José Manuel</span>
+        </h1>
+
+        <h2 class="hero-role">
+          Desarrollador PHP / Laravel junior.
+        </h2>
+
+        <p class="hero-description">
+          Construyo aplicaciones web con reglas de negocio claras y pruebas que las protegen.
+          Busco mi primera oportunidad en un equipo de desarrollo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#poolbook" class="btn-primary">Descubre PoolBook</a>
+          <a href="https://github.com/JoseBenitezAlba" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+          <a href="CV José Manuel Benítez Alba.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver CV</a>
+        </div>
+
+        <a href="#experience" class="scroll-indicator" aria-label="Scroll hacia abajo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <polyline points="19 12 12 19 5 12" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experience" class="section" data-section>
+      <div class="container narrow">
+        <h2>Experiencia</h2>
+        <div class="projects-grid">
 
           <article class="project-card">
             <h3>Youpal Group</h3>
@@ -191,22 +279,36 @@
             <p class="demo-note">La demo usa hosting gratuito en Render. La primera carga puede tardar unos 30 segundos o más si el servidor está dormido. Si no quieres esperar, puedes ver el vídeo o el código.</p>
           </article>
 
-          <!--
-            PROYECTO DRUPAL: cuando lo tengas, añade aquí una tarjeta
-            <article class="project-card"> con qué resuelve, qué módulos/tema
-            personalizado has hecho y enlaces a demo y código.
-          -->
+          <article class="project-card">
+            <h3>tareas-api</h3>
+            <p>API REST de tareas con Laravel y Sanctum. Cada usuario solo ve y modifica sus tareas
+              (policies), con filtros, paginación, validación y 15 tests que se ejecutan en CI.</p>
+            <span class="tech">Laravel · Sanctum · PHPUnit · GitHub Actions</span>
+            <div class="project-actions">
+              <a href="https://tareas-api-80m0.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">Probar demo</a>
+              <a href="https://github.com/JoseBenitezAlba/tareas-api" target="_blank" rel="noopener noreferrer" class="project-link">Ver código →</a>
+            </div>
+          </article>
 
           <article class="project-card">
-            <h3>Calculadora JS</h3>
-            <p>
-              Calculadora con soporte de teclado, modo claro/oscuro y sonidos
-              sintéticos. Sin dependencias externas.
-            </p>
-            <span class="tech">JavaScript · Web Audio API · CSS Variables</span>
-            <a href="https://josebenitezalba.github.io/Calculadora/" target="_blank" rel="noopener noreferrer" class="project-link">
-              Ver proyecto →
-            </a>
+            <h3>tickets-ia</h3>
+            <p>API de tickets de soporte con Laravel y Groq. La IA devuelve resumen, categoría, prioridad
+              y borrador de respuesta, y el backend valida el resultado antes de guardarlo.</p>
+            <span class="tech">Laravel · Groq API · API REST</span>
+            <div class="project-actions">
+              <a href="https://github.com/JoseBenitezAlba/tickets-ia" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver código</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Stockia</h3>
+            <p>Panel de inventario y ventas para pequeños comercios. Las ventas descuentan stock dentro
+              de una transacción, con roles de administrador y empleado.</p>
+            <span class="tech">Laravel · SQLite · Chart.js</span>
+            <div class="project-actions">
+              <a href="https://panel-citas-v9zx.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">Probar demo</a>
+              <a href="https://github.com/JoseBenitezAlba/stockia" target="_blank" rel="noopener noreferrer" class="project-link">Ver código →</a>
+            </div>
           </article>
 
         </div>
