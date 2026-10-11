@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>José Manuel | Desarrollador PHP y Laravel junior</title>
+  <title>José Manuel | Desarrollador PHP y Laravel</title>
   <meta name="description"
-    content="José Manuel, desarrollador web junior con foco en PHP y Laravel. Descubre PoolBook, una aplicación de reservas con roles, bonos y asistente de IA.">
+    content="Desarrollo aplicaciones web con PHP y Laravel. Prueba PoolBook, una app de reservas que puedes usar ahora mismo.">
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="José Manuel | PHP y Laravel junior" />
-  <meta property="og:description" content="Código que puedes ver y proyectos que puedes probar. Descubre PoolBook y mi trabajo como desarrollador web junior." />
+  <meta property="og:title" content="José Manuel | Desarrollador PHP y Laravel" />
+  <meta property="og:description" content="Desarrollo aplicaciones web con PHP y Laravel. Prueba PoolBook, una app de reservas que puedes usar ahora mismo." />
   <meta property="og:url" content="https://josebenitezalba.github.io/Personal-Website/" />
-  <meta property="og:image" content="https://josebenitezalba.github.io/Personal-Website/assets/social-preview.png" />
+  <meta property="og:image" content="https://josebenitezalba.github.io/Personal-Website/assets/1-social-preview.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -33,9 +33,9 @@
     <div class="container nav">
       <div class="logo">José<span>.</span></div>
       <nav id="main-nav">
+        <a href="#projects">Proyectos</a>
         <a href="#experience">Experiencia</a>
         <a href="#skills">Tecnologías</a>
-        <a href="#projects">Proyectos</a>
         <a href="#contact">Contacto</a>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
@@ -58,27 +58,62 @@
         </h1>
 
         <h2 class="hero-role">
-          Desarrollador PHP / Laravel junior.
+          Desarrollador PHP / Laravel.
         </h2>
 
         <p class="hero-description">
-          Construyo aplicaciones web con reglas de negocio claras y pruebas que las protegen.
-          Busco mi primera oportunidad en un equipo de desarrollo.
+          Hago aplicaciones web que resuelven un problema concreto, como reservar una piscina sin líos.
+          Busco mi primer trabajo en un equipo de desarrollo.
         </p>
 
         <div class="hero-buttons">
-          <a href="#poolbook" class="btn-primary">Descubre PoolBook</a>
+          <a href="#poolbook" class="btn-primary">Probar PoolBook</a>
           <a href="https://github.com/JoseBenitezAlba" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
           <a href="CV José Manuel Benítez Alba.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver CV</a>
         </div>
 
-        <a href="#experience" class="scroll-indicator" aria-label="Scroll hacia abajo">
+        <a href="#projects" class="scroll-indicator" aria-label="Scroll hacia abajo">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="12" y1="5" x2="12" y2="19" />
             <polyline points="19 12 12 19 5 12" />
           </svg>
         </a>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section" data-section>
+      <div class="container narrow">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+
+          <article id="poolbook" class="project-card featured-project">
+            <p class="eyebrow">Proyecto destacado</p>
+            <h3>PoolBook</h3>
+            <p class="project-lead">Reservar un carril sin llamadas ni hojas de cálculo.</p>
+            <p>Hice una web para que los usuarios reserven carril de piscina y el centro lo gestione.
+              Cada usuario tiene su bono de sesiones, y también se puede reservar hablando con un asistente de IA.</p>
+            <div class="case-flow" aria-label="Flujo de una reserva">
+              <span>Consulta disponibilidad</span><span aria-hidden="true">→</span>
+              <span>Valida las reglas</span><span aria-hidden="true">→</span><span>Confirma y consume el bono</span>
+            </div>
+            <h4>Lo que hay detrás</h4>
+            <ul class="case-details">
+              <li>Evita reservas que se pisan: el calendario y el asistente usan las mismas reglas.</li>
+              <li>Los bonos se gastan por orden de caducidad.</li>
+              <li>Tengo tests que comprueban las reglas de reserva.</li>
+            </ul>
+            <p class="tech">Laravel · PHP · MySQL · FullCalendar · Groq API</p>
+            <div class="project-actions">
+              <a href="https://poolbook.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Probar demo</a>
+              <a href="https://github.com/JoseBenitezAlba/poolbook" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver código</a>
+              <a href="https://youtu.be/JI9NC-3bdPs" target="_blank" rel="noopener noreferrer" class="project-link">Ver vídeo →</a>
+            </div>
+            <p class="demo-note">La demo usa hosting gratuito en Render. La primera carga puede tardar unos 30 segundos o más si el servidor está dormido. Si no quieres esperar, puedes ver el vídeo o el código.</p>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -90,24 +125,18 @@
 
           <article class="project-card">
             <h3>Youpal Group</h3>
-            <p class="eyebrow">Formación dual · Desarrollador web · Marzo – junio 2024 · Remoto</p>
+            <p class="eyebrow">Prácticas (FP dual) · Desarrollador web · 2023 y 2024 · Remoto</p>
             <p>
-              Desarrollo completo de un sitio web con Drupal: configuración de módulos,
-              contenidos dinámicos y ajustes de interfaz con CSS y JavaScript.
-            </p>
-            <p class="eyebrow">Formación dual · Desarrollador web · Marzo – junio 2023 · Remoto</p>
-            <p>
-              Desarrollo frontend en un equipo de 4 desarrolladores con Git y GitLab.
-              Maquetación con HTML y CSS a partir de diseños visuales
-              y gestión de contenidos con Drupal (Layout Builder).
+              Webs con Drupal y maquetación con HTML y CSS a partir de diseños, en un equipo
+              de 4 desarrolladores con Git y GitLab. En 2024 desarrollé un sitio completo con Drupal.
             </p>
           </article>
 
           <article class="project-card">
             <h3>CEGINFOR</h3>
-            <p class="eyebrow">Formación dual · Administrador de sistemas · Septiembre – diciembre 2021</p>
+            <p class="eyebrow">Prácticas (FP dual) · Sistemas · Septiembre – diciembre 2021</p>
             <p>
-              Configuración de redes locales y mantenimiento de equipos informáticos.
+              Redes locales y mantenimiento de equipos informáticos.
             </p>
           </article>
 
@@ -121,108 +150,17 @@
         <h2>Tecnologías</h2>
         <div class="skills-grid">
           <div class="skill-item">
-            <span class="skill-icon">🐘</span>
-            <span class="skill-name">PHP · Laravel</span>
-            <span class="skill-level">MVC, Eloquent, Blade, autenticación, API REST, policies, tests</span>
+            <span class="skill-name">Backend</span>
+            <span class="skill-level">PHP, Laravel, MySQL</span>
           </div>
           <div class="skill-item">
-            <span class="skill-icon">🗄️</span>
-            <span class="skill-name">MySQL</span>
-            <span class="skill-level">Modelado, migraciones, transacciones y bloqueo de filas</span>
+            <span class="skill-name">Frontend</span>
+            <span class="skill-level">JavaScript, HTML, CSS, Bootstrap</span>
           </div>
           <div class="skill-item">
-            <span class="skill-icon">⚡</span>
-            <span class="skill-name">JavaScript</span>
-            <span class="skill-level">DOM, eventos, funciones, objetos, módulos</span>
+            <span class="skill-name">Herramientas</span>
+            <span class="skill-level">Git, GitHub, GitLab, Drupal</span>
           </div>
-          <div class="skill-item">
-            <span class="skill-icon">🎨</span>
-            <span class="skill-name">HTML · CSS</span>
-            <span class="skill-level">HTML semántico, responsive, Flexbox, Grid, animaciones</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-icon">🐙</span>
-            <span class="skill-name">Git · GitHub · GitLab</span>
-            <span class="skill-level">Trabajo en equipo con ramas y repositorios remotos</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-icon">🐧</span>
-            <span class="skill-name">Linux · Docker</span>
-            <span class="skill-level">Entornos de desarrollo y despliegue</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-icon">🔷</span>
-            <span class="skill-name">Drupal</span>
-            <span class="skill-level">Layout Builder, configuración de módulos, contenidos dinámicos</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="projects" class="section" data-section>
-      <div class="container narrow">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-
-          <article id="poolbook" class="project-card featured-project">
-            <p class="eyebrow">Proyecto destacado · Aplicación completa</p>
-            <h3>PoolBook</h3>
-            <p class="project-lead">De elegir un carril a confirmar una reserva.</p>
-            <p>Aplicación para gestionar reservas de una piscina. Calendario interactivo,
-              roles de usuario y administrador, bonos de sesiones y un asistente de IA con Groq.</p>
-            <div class="case-flow" aria-label="Flujo de una reserva">
-              <span>Consulta disponibilidad</span><span aria-hidden="true">→</span>
-              <span>Valida las reglas</span><span aria-hidden="true">→</span><span>Confirma y consume el bono</span>
-            </div>
-            <h4>Lo que hay detrás</h4>
-            <ul class="case-details">
-              <li><strong>Una misma validación.</strong> Calendario y asistente usan las reglas de horario, límite diario y capacidad por carril.</li>
-              <li><strong>Bonos en orden de caducidad.</strong> Consumo FIFO con transacciones y bloqueo de filas para evitar descuentos duplicados.</li>
-              <li><strong>Acceso según el rol.</strong> Policies y permisos para separar las reservas propias de la gestión administrativa.</li>
-              <li><strong>Tests de regresión.</strong> Reglas de reserva, bonos y corrección de un problema de zona horaria.</li>
-            </ul>
-            <p class="tech">Laravel · PHP · MySQL · FullCalendar · Groq API</p>
-            <div class="project-actions">
-              <a href="https://poolbook.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Probar demo</a>
-              <a href="https://github.com/JoseBenitezAlba/poolbook" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver código</a>
-              <a href="https://youtu.be/JI9NC-3bdPs" target="_blank" rel="noopener noreferrer" class="project-link">Ver vídeo →</a>
-            </div>
-            <p class="demo-note">La demo usa hosting gratuito en Render. La primera carga puede tardar unos 30 segundos o más si el servidor está dormido. Si no quieres esperar, puedes ver el vídeo o el código.</p>
-          </article>
-
-          <article class="project-card">
-            <h3>tareas-api</h3>
-            <p>API REST de tareas con Laravel y Sanctum. Cada usuario solo ve y modifica sus tareas
-              (policies), con filtros, paginación, validación y 15 tests que se ejecutan en CI.</p>
-            <span class="tech">Laravel · Sanctum · PHPUnit · GitHub Actions</span>
-            <div class="project-actions">
-              <a href="https://tareas-api-80m0.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">Probar demo</a>
-              <a href="https://github.com/JoseBenitezAlba/tareas-api" target="_blank" rel="noopener noreferrer" class="project-link">Ver código →</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>tickets-ia</h3>
-            <p>API de tickets de soporte con Laravel y Groq. La IA devuelve resumen, categoría, prioridad
-              y borrador de respuesta, y el backend valida el resultado antes de guardarlo.</p>
-            <span class="tech">Laravel · Groq API · API REST</span>
-            <div class="project-actions">
-              <a href="https://github.com/JoseBenitezAlba/tickets-ia" target="_blank" rel="noopener noreferrer" class="btn-secondary">Ver código</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>Stockia</h3>
-            <p>Panel de inventario y ventas para pequeños comercios. Las ventas descuentan stock dentro
-              de una transacción, con roles de administrador y empleado.</p>
-            <span class="tech">Laravel · SQLite · Chart.js</span>
-            <div class="project-actions">
-              <a href="https://panel-citas-v9zx.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">Probar demo</a>
-              <a href="https://github.com/JoseBenitezAlba/stockia" target="_blank" rel="noopener noreferrer" class="project-link">Ver código →</a>
-            </div>
-          </article>
-
         </div>
       </div>
     </section>
@@ -232,10 +170,7 @@
       <div class="container narrow contact-container">
         <div class="contact-text">
           <h2>Hablemos</h2>
-          <p>Busco mi primer puesto como desarrollador PHP / Laravel.</p>
-          <p>
-            Vivo en Conil de la Frontera (Cádiz) y estoy abierto a trabajo remoto o híbrido.
-          </p>
+          <p>Busco mi primer puesto como desarrollador PHP / Laravel. Remoto o híbrido.</p>
         </div>
         <div class="contact-cta">
           <a href="mailto:jombenalb@gmail.com" class="btn-primary">Escríbeme</a>
