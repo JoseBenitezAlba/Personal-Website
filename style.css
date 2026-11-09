@@ -644,3 +644,16 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
   html:not(.js) #main-nav { flex-direction: row; flex-wrap: wrap; }
   html:not(.js) .hero { padding-top: 65px; }
 }
+
+/* Capturas del proyecto, con acceso a la imagen completa. */
+.project-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  margin: 28px 0;
+}
+.project-gallery figure { min-width: 0; }
+.project-gallery a { display: block; border-radius: 6px; overflow: hidden; }
+.project-gallery img { display: block; width: 100%; height: auto; background: #eef1f4; }
+.project-gallery figcaption { margin-top: 9px; color: #b5bfd0; font-size: .85rem; line-height: 1.5; }
+.project-gallery figure:last-child { width: 100%; max-width: 439px; }
