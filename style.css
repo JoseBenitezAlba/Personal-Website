@@ -603,7 +603,7 @@ p { color: #c5c9d2; }
 .hero-description { max-width: 660px; }
 .hero-role { max-width: 800px; }
 .hero-buttons, .project-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.section { padding: 80px 0; scroll-margin-top: 90px; }
+.section { padding: 56px 0; scroll-margin-top: 90px; }
 #poolbook { scroll-margin-top: 100px; }
 .featured-project { grid-column: 1 / -1; padding: 36px; border-color: #5878ad; background: #171d28; }
 .featured-project h3 { font-size: 2.2rem; }
@@ -657,3 +657,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
 .project-gallery img { display: block; width: 100%; height: auto; background: #eef1f4; }
 .project-gallery figcaption { margin-top: 9px; color: #b5bfd0; font-size: .85rem; line-height: 1.5; }
 .project-gallery figure:last-child { width: 100%; max-width: 439px; }
+
