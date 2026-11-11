@@ -678,42 +678,49 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
   .project-gallery { grid-template-columns: 1fr; }
 }
 
-/* Más ancho, más aire y letra algo mayor en pantallas grandes. */
-body { font-size: 1.0625rem; line-height: 1.7; }
-.container { max-width: 1080px; }
-.hero-container, .narrow { max-width: 1080px; }
-.hero { padding: 140px 0 40px; }
-.hero-name { font-size: 3.8rem; margin-bottom: 18px; }
-.hero-role { font-size: 1.5rem; margin-bottom: 22px; }
-.hero-description { max-width: 720px; font-size: 1.1rem; margin-bottom: 30px; }
-nav a { font-size: 1rem; }
-.logo { font-size: 1.3rem; }
-.btn-primary, .btn-secondary { font-size: 1rem; padding: 14px 26px; }
-.section { padding: 72px 0; }
-#projects.section { padding-top: 32px; }
-.section-title { font-size: 1.9rem; margin-bottom: 28px; }
-.featured-project { padding: 44px; }
-.featured-project h3 { font-size: 2.5rem; }
-.project-lead { font-size: 1.5rem; }
-.project-gallery { gap: 28px; margin: 34px 0; }
-.project-gallery figcaption { font-size: .92rem; }
-.case-flow { padding: 26px 0; margin: 30px 0; }
-.case-flow span:not([aria-hidden]) { font-size: 1.05rem; }
-.case-details { font-size: 1.05rem; }
-.featured-project h4 { font-size: 1.25rem; margin: 30px 0 14px; }
-.tech { font-size: .95rem; }
-.demo-note { font-size: .98rem; }
-.project-card { padding: 34px; }
-.skill-name { font-size: 1.1rem; }
-.skill-level { font-size: .92rem; }
+/* Más ancho, más aire y letra más grande en pantallas grandes. */
+body { font-size: 1.125rem; line-height: 1.75; }
+.container { max-width: 1200px; }
+.hero-container, .narrow { max-width: 1200px; }
+.hero { padding: 160px 0 56px; }
+.hero-name { font-size: 4.8rem; margin-bottom: 20px; }
+.hero-role { font-size: 1.7rem; margin-bottom: 26px; }
+.hero-description { max-width: 780px; font-size: 1.25rem; margin-bottom: 36px; }
+nav a { font-size: 1.1rem; }
+.logo { font-size: 1.5rem; }
+.btn-primary, .btn-secondary { font-size: 1.1rem; padding: 18px 36px; }
+.hero-buttons { gap: 20px; margin-top: 8px; }
+.project-actions { gap: 16px; }
+.section { padding: 96px 0; }
+#projects.section { padding-top: 40px; }
+.section-title { font-size: 2.3rem; margin-bottom: 36px; }
+.featured-project { padding: 52px; }
+.featured-project h3 { font-size: 3rem; }
+.project-lead { font-size: 1.7rem; }
+.featured-project p, .case-details { max-width: 800px; }
+.project-gallery { gap: 36px; margin: 44px 0; }
+.project-gallery figcaption { font-size: 1rem; }
+.case-flow { padding: 32px 0; margin: 40px 0; }
+.case-flow span:not([aria-hidden]) { font-size: 1.15rem; }
+.case-details { font-size: 1.15rem; }
+.featured-project h4 { font-size: 1.4rem; margin: 40px 0 16px; }
+.tech { font-size: 1.05rem; }
+.demo-note { font-size: 1.05rem; }
+.project-card { padding: 40px; }
+.skill-name { font-size: 1.2rem; }
+.skill-level { font-size: 1rem; }
 @media (max-width: 768px) {
-  body { font-size: 1.05rem; }
+  body { font-size: 1.0625rem; }
   .hero { padding: 120px 0 24px; }
-  .hero-name { font-size: 2.4rem; }
-  .hero-role { font-size: 1.3rem; }
-  .section { padding: 56px 0; }
+  .hero-name { font-size: 2.6rem; }
+  .hero-role { font-size: 1.35rem; }
+  .hero-description { font-size: 1.1rem; }
+  .section { padding: 60px 0; }
   .featured-project { padding: 24px; }
-  .featured-project h3 { font-size: 2.1rem; }
-  .project-lead { font-size: 1.3rem; }
-  .btn-primary, .btn-secondary { padding: 13px 22px; }
+  .featured-project h3 { font-size: 2.2rem; }
+  .project-lead { font-size: 1.35rem; }
+  .case-flow span:not([aria-hidden]) { font-size: 1.05rem; }
+  .btn-primary, .btn-secondary { font-size: 1rem; padding: 15px 26px; }
+  .hero-buttons { gap: 16px; }
+  .project-actions { gap: 14px; }
 }
