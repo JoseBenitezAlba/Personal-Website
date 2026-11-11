@@ -682,7 +682,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
 body { font-size: 1.125rem; line-height: 1.75; }
 .container { max-width: 1280px; }
 .hero-container, .narrow { max-width: 1280px; }
-.hero { padding: 150px 0 8px; }
+.hero { padding: 150px 0 40px; }
 .hero-name { font-size: 4rem; margin-bottom: 18px; }
 .hero-role { font-size: 1.7rem; margin-bottom: 26px; }
 .hero-description { max-width: 780px; font-size: 1.25rem; margin-bottom: 36px; }
@@ -720,14 +720,14 @@ nav a { font-size: 1.1rem; }
   .featured-project h3 { font-size: 2.2rem; }
   .project-lead { font-size: 1.35rem; }
   .case-flow span:not([aria-hidden]) { font-size: 1.05rem; }
-  .btn-primary, .btn-secondary { font-size: 1rem; padding: 15px 26px; }
+  .btn-primary, .btn-secondary { font-size: 1rem; padding: 14px 28px; }
   .hero-buttons { gap: 16px; }
   .project-actions { gap: 14px; }
 }
 
 /* En pantallas anchas, PoolBook usa dos columnas: texto a la izquierda y capturas a la derecha. */
 @media (min-width: 1100px) {
-  .featured-project { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-rows: repeat(4, auto) 1fr; column-gap: 56px; align-content: start; padding: 48px; }
+  .featured-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: repeat(4, auto) 1fr; column-gap: 56px; align-content: start; padding: 48px; }
   .featured-project > * { grid-column: 1; }
   .featured-project .project-gallery { grid-column: 2; grid-row: 1 / span 5; margin: 0; align-self: start; }
   .featured-project .case-flow { grid-column: 1 / -1; }
