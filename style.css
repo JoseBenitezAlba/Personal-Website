@@ -658,3 +658,22 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
 .project-gallery figcaption { margin-top: 9px; color: #b5bfd0; font-size: .85rem; line-height: 1.5; }
 .project-gallery figure:last-child { width: 100%; max-width: 439px; }
 
+
+
+/* Portada más compacta: PoolBook se ve sin tener que bajar mucho. */
+.hero { padding: 120px 0 28px; }
+.hero-name { font-size: 3rem; margin-bottom: 14px; }
+.hero-role { margin-bottom: 18px; }
+.hero-description { margin-bottom: 24px; }
+.hero-buttons { margin-top: 0; }
+#projects.section { padding-top: 24px; }
+.section-title { font-size: 1.6rem; margin-bottom: 20px; }
+.project-gallery { display: grid; grid-template-columns: 1.8fr 1fr; gap: 20px; align-items: start; }
+.project-gallery figure:last-child { max-width: none; }
+.project-gallery img { border: 1px solid #364254; }
+.case-flow b { display: inline-block; width: 24px; height: 24px; line-height: 24px; margin-right: 8px; text-align: center; border-radius: 50%; background: #2c3b57; color: #fff; font-size: .8rem; }
+@media (max-width: 768px) {
+  .hero { padding: 120px 0 20px; }
+  .hero-name { font-size: 2.2rem; }
+  .project-gallery { grid-template-columns: 1fr; }
+}
