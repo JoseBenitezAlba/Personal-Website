@@ -35,4 +35,4 @@ Después se abre `http://localhost:8000`. También funciona abriendo `index.html
 
 ## Publicación
 
-GitHub Pages publica la rama `main`: cada cambio que se fusiona en `main` aparece en la web en un par de minutos.
+GitHub Pages publica la rama `main`: los cambios que se fusionan en `main` se despliegan solos.
