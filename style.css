@@ -677,3 +677,43 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b5ccff; outline-offs
   .hero-name { font-size: 2.2rem; }
   .project-gallery { grid-template-columns: 1fr; }
 }
+
+/* Más ancho, más aire y letra algo mayor en pantallas grandes. */
+body { font-size: 1.0625rem; line-height: 1.7; }
+.container { max-width: 1080px; }
+.hero-container, .narrow { max-width: 1080px; }
+.hero { padding: 140px 0 40px; }
+.hero-name { font-size: 3.8rem; margin-bottom: 18px; }
+.hero-role { font-size: 1.5rem; margin-bottom: 22px; }
+.hero-description { max-width: 720px; font-size: 1.1rem; margin-bottom: 30px; }
+nav a { font-size: 1rem; }
+.logo { font-size: 1.3rem; }
+.btn-primary, .btn-secondary { font-size: 1rem; padding: 14px 26px; }
+.section { padding: 72px 0; }
+#projects.section { padding-top: 32px; }
+.section-title { font-size: 1.9rem; margin-bottom: 28px; }
+.featured-project { padding: 44px; }
+.featured-project h3 { font-size: 2.5rem; }
+.project-lead { font-size: 1.5rem; }
+.project-gallery { gap: 28px; margin: 34px 0; }
+.project-gallery figcaption { font-size: .92rem; }
+.case-flow { padding: 26px 0; margin: 30px 0; }
+.case-flow span:not([aria-hidden]) { font-size: 1.05rem; }
+.case-details { font-size: 1.05rem; }
+.featured-project h4 { font-size: 1.25rem; margin: 30px 0 14px; }
+.tech { font-size: .95rem; }
+.demo-note { font-size: .98rem; }
+.project-card { padding: 34px; }
+.skill-name { font-size: 1.1rem; }
+.skill-level { font-size: .92rem; }
+@media (max-width: 768px) {
+  body { font-size: 1.05rem; }
+  .hero { padding: 120px 0 24px; }
+  .hero-name { font-size: 2.4rem; }
+  .hero-role { font-size: 1.3rem; }
+  .section { padding: 56px 0; }
+  .featured-project { padding: 24px; }
+  .featured-project h3 { font-size: 2.1rem; }
+  .project-lead { font-size: 1.3rem; }
+  .btn-primary, .btn-secondary { padding: 13px 22px; }
+}
