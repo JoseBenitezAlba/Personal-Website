@@ -740,3 +740,7 @@ nav a { font-size: 1.1rem; }
   .featured-project .project-actions { grid-column: 2; grid-row: 8; align-self: start; }
   .featured-project .demo-note { grid-column: 2; grid-row: 9; align-self: start; margin: 8px 0 0; }
 }
+/* Más aire antes de Proyectos en pantallas de ordenador. */
+@media (min-width: 769px) {
+ #projects.section { padding-top: 88px; }
+}
